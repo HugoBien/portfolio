@@ -1,12 +1,14 @@
+
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+import './Header.css'
 
 
 function Header() {
 
     return (
         <header className="header">
-            <div className="logo">
+            <div className="name">
                 <h1>Hugo BIENVENOT</h1>
             </div>
             <nav className="nav">

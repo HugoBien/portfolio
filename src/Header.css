@@ -1,0 +1,24 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Optionnel : pour s'assurer qu'il reste au-dessus des autres éléments */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optionnel : pour ajouter une ombre légère */
+}
+
+
+
+.nav ul {
+    list-style: none; /* Supprimer les puces des éléments de la liste */
+    margin-left: 20px;
+    padding: 0;
+    display: flex; /* Affiche les éléments de la liste à l'horizontale */
+    gap: 40px; /* Espacement entre les éléments */
+}
+
+.name{
+    display: flex;
+    left: 0;
+    margin-left: 10px;
+}
