@@ -1,6 +1,7 @@
 
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+import {Link} from "react-router-dom"
 import './Header.css'
 
 
@@ -13,11 +14,12 @@ function Header() {
             </div>
             <nav className="nav">
                 <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#experience">Expériences</a></li>
+                    <li><Link to="/">À propos</Link></li>
+                    <li><Link to="/skills">Compétences</Link> </li>
+                    <li><Link to="/experiences">Expériences</Link></li>
                     <li><a href="#projects">Projets</a></li>
                     <li><a href="#contact">Contact</a></li>
+
                 </ul>
             </nav>
         </header>
