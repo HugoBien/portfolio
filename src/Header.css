@@ -3,22 +3,37 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Optionnel : pour s'assurer qu'il reste au-dessus des autres éléments */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optionnel : pour ajouter une ombre légère */
+    z-index: 1000;
+    background-color: #222; /* Assure une bonne visibilité du texte */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Aligne .name à gauche et .nav à droite */
+    align-items: center; /* Centrer verticalement */
+    padding: 10px 20px;
+    box-sizing: border-box; /* Assure que la padding est incluse dans la largeur */
+    overflow: hidden; /* Empêche le contenu de déborder */
 }
 
-
+.name h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
 
 .nav ul {
-    list-style: none; /* Supprimer les puces des éléments de la liste */
-    margin-left: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: 0;
     padding: 0;
-    display: flex; /* Affiche les éléments de la liste à l'horizontale */
-    gap: 40px; /* Espacement entre les éléments */
+    display: flex;
+    gap: 40px; /* Espacement entre les éléments de la liste */
 }
 
-.name{
-    display: flex;
-    left: 0;
-    margin-left: 10px;
+.nav ul li a {
+    color: #4a5de1; /* Couleur des liens */
+    text-decoration: none;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
 }
